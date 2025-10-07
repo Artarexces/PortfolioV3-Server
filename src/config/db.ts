@@ -1,8 +1,7 @@
 import { connect } from "mongoose";
 
-process.loadEnvFile();
 
-const URI_DB = process.env.URI_DB;
+const URI_DB = process.env.URI_DB || "";
 
 export const connectDB = async () => {
     try {
